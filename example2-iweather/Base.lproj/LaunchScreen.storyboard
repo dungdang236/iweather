@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bigicon" translatesAutoresizingMaskIntoConstraints="NO" id="oc6-MM-kLX">
+                                <rect key="frame" x="140" y="133" width="320" height="320"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="anp-oD-9uc"/>
+                                    <constraint firstAttribute="height" constant="320" id="z5b-Om-Kha"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R5E-Wf-G1v">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="2"/>
+                                <animations/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P4O-wR-eJO">
+                                <rect key="frame" x="234" y="37" width="133" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="IWeather" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-FD-K6f">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="133" id="JWn-49-iR7"/>
+                                            <constraint firstAttribute="height" constant="30" id="PrE-Gi-hkV"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="Spb-Rf-3BR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="Y7l-Ab-5av"/>
+                                            <constraint firstAttribute="width" constant="133" id="bNq-DP-9bX"/>
+                                            <constraint firstAttribute="width" secondItem="m5d-FD-K6f" secondAttribute="height" multiplier="133:30" id="ffu-O3-IyS"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="jGd-r6-t11"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="pPV-C5-cYE"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="133" id="uT8-Xj-G0h"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jPa-0H-Lji">
+                                        <rect key="frame" x="0.0" y="30" width="133" height="50"/>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Copyright (c) 2015 Soobis. All rights reserved " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tF3-B9-zfp">
+                                <rect key="frame" x="162" y="507" width="318" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oc6-MM-kLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0S3-PT-fMZ"/>
+                            <constraint firstItem="oc6-MM-kLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6hR-m2-YrV"/>
+                            <constraint firstItem="oc6-MM-kLX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="M5D-Og-Ocl"/>
+                            <constraint firstItem="tF3-B9-zfp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QHK-yt-Iiu"/>
+                            <constraint firstItem="P4O-wR-eJO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="goK-7h-fxR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bigicon" width="512" height="512"/>
+    </resources>
+</document>
